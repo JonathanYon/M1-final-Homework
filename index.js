@@ -128,21 +128,26 @@ const newHeader = function(){
 //--------------------------------------------------------------------------------------------
 
 // console.log(table1)
+let table1 = document.getElementById("container")
 const addRow = function(){
     let table1 = document.getElementById("container")  
-    for (let i = 0; i < 2; i++){
+    for (let i = 0; i < 1; i++){
         let roww = document.createElement("tr")
 
-        for (let j = 0; j < 6; j++){
+        for (let j = 0; j < 4; j++){
             let column = document.createElement("td")
-            column.innerText = "column "+ i + " , row " + j
+            column.innerText = `column ${i+1}, row ${j+1}`
             roww.appendChild(column)
         }
+        table1.appendChild(roww)
     }
-    table1.appendChild(roww)
+   
 }
-contain.addEventListener("click", addRow)
-//  console.log(addRow())
+let contains = document.getElementsByTagName("h1")[0]
+
+contains.addEventListener("click", addRow)
+
+ console.log(table1)
 
 
 //         EXTRA 
