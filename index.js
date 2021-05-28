@@ -161,12 +161,20 @@ let roww = document.createElement("tr")
         table1.appendChild(roww)
 
 }
-let contains = document.getElementsByTagName("h1")[0]
+addRow()
 
-contains.addEventListener("click", addRow)
-let table1 = document.getElementById("container")
+//----------------------------------------------------------------------------------------------------
+const addClass = function(){
+    let rowClass = document.getElementsByTagName("tr")
+    for (let i = 0; i < rowClass.length; i++){
+        rowClass[i].classList.add("row")
+        
+    }
+    
+}
+addClass()
+//---------------------------------------------------------------------------------------------------
 
-console.log(table1)
 
 //         EXTRA 
 
