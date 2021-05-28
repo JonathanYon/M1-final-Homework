@@ -114,10 +114,17 @@ let tdd = document.getElementsByTagName("td")
 // console.log(tdd)
 //------------------------------------------------------------------------------------
 for (row of tdd){
-    console.log(row)
+    // console.log(row)
 }
 //-------------------------------------------------------------------------------------------
-let h11 = document.querySelector()
+let h11 = document.querySelector("h1")
+// console.log(h11)
+const newHeader = function(){
+    let newHe = h11.innerText;
+    newHe = "The Header"
+    return newHe
+}
+console.log(newHeader())
 
 //         EXTRA 
 
