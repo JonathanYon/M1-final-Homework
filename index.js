@@ -171,6 +171,17 @@ const newItem = function(){
     newList.appendChild(newItem)
 }
 newItem()
+//-------------------------------------------------------------------------------------------------------------
+const emptyLi = function(){
+    let newList = document.querySelectorAll("ul>li")
+    for (let i = 0; i < newList.length; i++){
+        newList[i].remove()
+    }
+}
+
+emptyLi()
+
+
 //         EXTRA 
 
 //         41) Add an eventListener to alert when tde mouse is over a link, displaying tde URL
