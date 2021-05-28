@@ -114,7 +114,7 @@ let tdd = document.getElementsByTagName("td")
 // console.log(tdd)
 //------------------------------------------------------------------------------------
 for (row of tdd){
-    // console.log(row)
+    // console.log(row.innerText)
 }
 //-------------------------------------------------------------------------------------------
 let h11 = document.querySelector("h1")
@@ -128,27 +128,45 @@ const newHeader = function(){
 //--------------------------------------------------------------------------------------------
 
 // console.log(table1)
-let table1 = document.getElementById("container")
-const addRow = function(){
-    let table1 = document.getElementById("container")  
-    for (let i = 0; i < 1; i++){
-        let roww = document.createElement("tr")
+// let table1 = document.getElementById("container")
+// const addRow = function(){
+//     let table1 = document.getElementById("container")  
+//     for (let i = 0; i < 1; i++){
+//         let roww = document.createElement("tr")
 
-        for (let j = 0; j < 4; j++){
-            let column = document.createElement("td")
-            column.innerText = `column ${i+1}, row ${j+1}`
-            roww.appendChild(column)
-        }
-        table1.appendChild(roww)
-    }
+//         for (let j = 0; j < 4; j++){
+//             let column = document.createElement("td")
+//             column.innerText = `column ${i+1}, row ${j+1}`
+//             roww.appendChild(column)
+//         }
+//         table1.appendChild(roww)
+//     }
    
+// }
+// let contains = document.getElementsByTagName("h1")[0]
+
+// contains.addEventListener("click", addRow)
+
+
+//  console.log(table1)
+
+const addRow = function(){
+let table1 = document.getElementById("container")
+let roww = document.createElement("tr")
+    for (let i = 0; i < 4; i++){
+        let column = document.createElement("td")
+        column.innerText = `column ${i}`
+            roww.appendChild(column)
+    }
+        table1.appendChild(roww)
+
 }
 let contains = document.getElementsByTagName("h1")[0]
 
 contains.addEventListener("click", addRow)
+let table1 = document.getElementById("container")
 
- console.log(table1)
-
+console.log(table1)
 
 //         EXTRA 
 
