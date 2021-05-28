@@ -164,7 +164,13 @@ window.onload = function(){
     console.log("page loaded")
 }
 //-----------------------------------------------------------------------------------------------------
-
+const newItem = function(){
+    let newList = document.getElementsByTagName("ul")[0]
+    let newItem = document.createElement("li")
+    newItem.innerText = "New Item"
+    newList.appendChild(newItem)
+}
+newItem()
 //         EXTRA 
 
 //         41) Add an eventListener to alert when tde mouse is over a link, displaying tde URL
