@@ -124,7 +124,26 @@ const newHeader = function(){
     newHe = "The Header"
     return newHe
 }
-console.log(newHeader())
+// console.log(newHeader())
+//--------------------------------------------------------------------------------------------
+
+// console.log(table1)
+const addRow = function(){
+    let table1 = document.getElementById("container")  
+    for (let i = 0; i < 2; i++){
+        let roww = document.createElement("tr")
+
+        for (let j = 0; j < 6; j++){
+            let column = document.createElement("td")
+            column.innerText = "column "+ i + " , row " + j
+            roww.appendChild(column)
+        }
+    }
+    table1.appendChild(roww)
+}
+contain.addEventListener("click", addRow)
+//  console.log(addRow())
+
 
 //         EXTRA 
 
