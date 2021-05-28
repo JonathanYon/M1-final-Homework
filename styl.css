@@ -1,0 +1,19 @@
+body {
+    margin: 0; 
+    padding:0;
+    
+}
+
+
+table, th, td {
+    border: 1px solid black;
+  }
+  img.resize {
+    width:60px;
+    height:60px;
+  }
+  h1 {
+      display: flex;
+      align-content: center;
+      text-align:center;
+  }
