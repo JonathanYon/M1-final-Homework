@@ -167,7 +167,7 @@ addRow()
 const addClass = function(){
     let rowClass = document.getElementsByTagName("tr")
     for (let i = 0; i < rowClass.length; i++){
-        rowClass[i].classList.add("row")
+        rowClass[i].classList.add("test")
         
     }
     
