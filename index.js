@@ -110,11 +110,11 @@
 
 // let contain = document.getElementById("container")
 // //-----------------------------------------------------------------------------------------
-// let tdd = document.getElementsByTagName("td")
+let tdd = document.getElementsByTagName("td")
 // // console.log(tdd)
 // //------------------------------------------------------------------------------------
-// for (row of tdd){
-//     // console.log(row.innerText)
+// for (let i = 0; i < tdd.length; i++){
+//     tdd[i].innerText = "New text"
 // }
 // //-------------------------------------------------------------------------------------------
 // let h11 = document.querySelector("h1")
@@ -205,18 +205,15 @@
 // }
 // console.log(hoverOnA())
 //------------------------------------------------------------------------------------------------------
-let theDiv = document.getElementsByTagName("div")[2]
-let addButton = document.createElement("button")
-addButton.innerText = "Click"
-theDiv.appendChild(addButton)
-// console.log(addButton)
 const hideImg = function(){
-    let image = document.getElementsByTagName("img")
-    for (let i = 0; i < image.length; i++){
-        image[i].classList.add("img-class")
-    }
+    let theDiv = document.getElementsByTagName("div")[2]
+    let addButton = document.createElement("button")
+    addButton.innerText = "Click"
+    theDiv.appendChild(addButton)
+
 }
-hideImg()
+// console.log(addButton)
+
 // const addBut = function(){
     
 // }
