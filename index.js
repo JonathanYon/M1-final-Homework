@@ -225,6 +225,14 @@ let tdd = document.getElementsByTagName("td")
     })
 //--------------------------------------------------------------------------------------------------------
 
+let theDivs = document.getElementsByTagName("div")[2]
+    let addButtons = document.createElement("button")
+    addButtons.innerText = "Toggle"
+    theDivs.appendChild(addButtons)
 
+addButtons.addEventListener("click", function(){
+    let table = document.getElementById("container")
+    table.classList.toggle("table-toggle")
+})
 
 
