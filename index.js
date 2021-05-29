@@ -210,17 +210,21 @@ let tdd = document.getElementsByTagName("td")
 
 
 //------------------------------------------------------------------------------------------------------
-// const hideImg = function(){
-//     let theDiv = document.getElementsByTagName("div")[2]
-//     let addButton = document.createElement("button")
-//     addButton.innerText = "Click"
-//     theDiv.appendChild(addButton)
 
-// }
-// console.log(addButton)
+    let theDiv = document.getElementsByTagName("div")[2]
+    let addButton = document.createElement("button")
+    addButton.innerText = "Click"
+    theDiv.appendChild(addButton)
+    addButton.addEventListener("click", function(){
+        
+        let img = document.getElementsByTagName("img")
+        for (let i = 0; i < img.length; i++){
+            img[i].classList.toggle("img-toggle")
+        }
+        
+    })
+//--------------------------------------------------------------------------------------------------------
 
-// const addBut = function(){
-    
-// }
-// addBut()
+
+
 
