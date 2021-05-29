@@ -260,3 +260,10 @@ for (let i = 0; i < tdd.length; i++){
 // })
 //---------------------------------------------------------------------------------------------------------------
 
+    let theDiv = document.getElementsByTagName("div")[2]
+    let addButto = document.createElement("button")
+    addButto.innerText = "Delete"
+    theDiv.appendChild(addButto)
+    addButto.addEventListener("click", function(){
+
+    })
