@@ -195,23 +195,28 @@ let tdd = document.getElementsByTagName("td")
 //         49) Write a function to add a table witd 4 rows and 3 columns programmatically
 //         50) Write a function to remove tde table from tde page
 //----------------------------------------------------------------------------------------------------
-// const hoverOnA = function(){
-//     let aHref = document.getElementsByTagName('a')
+
+    let aHref = document.getElementsByTagName('a')
     
-//     for (let i = 0; i < aHref.length; i++){
-//        aHref[i].href  
-//     }
+    for (let i = 0; i < aHref.length; i++){
+       let linkz = aHref[i].href 
+       aHref[i].addEventListener("mouseover", function(){
+           alert(linkz)
+       }) 
+    }
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------
+// const hideImg = function(){
+//     let theDiv = document.getElementsByTagName("div")[2]
+//     let addButton = document.createElement("button")
+//     addButton.innerText = "Click"
+//     theDiv.appendChild(addButton)
 
 // }
-// console.log(hoverOnA())
-//------------------------------------------------------------------------------------------------------
-const hideImg = function(){
-    let theDiv = document.getElementsByTagName("div")[2]
-    let addButton = document.createElement("button")
-    addButton.innerText = "Click"
-    theDiv.appendChild(addButton)
-
-}
 // console.log(addButton)
 
 // const addBut = function(){
