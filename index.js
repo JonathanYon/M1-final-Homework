@@ -197,52 +197,64 @@ for (let i = 0; i < tdd.length; i++){
 //         50) Write a function to remove tde table from tde page
 //----------------------------------------------------------------------------------------------------
 
-    let aHref = document.getElementsByTagName('a')
+//     let aHref = document.getElementsByTagName('a')
     
-    for (let i = 0; i < aHref.length; i++){
-       let linkz = aHref[i].href 
-       aHref[i].addEventListener("mouseover", function(){
-           alert(linkz)
-       }) 
-    }
+//     for (let i = 0; i < aHref.length; i++){
+//        let linkz = aHref[i].href 
+//        aHref[i].addEventListener("mouseover", function(){
+//            alert(linkz)
+//        }) 
+//     }
 
 
 
 
 
-//------------------------------------------------------------------------------------------------------
+// //------------------------------------------------------------------------------------------------------
 
-    let theDiv = document.getElementsByTagName("div")[2]
-    let addButton = document.createElement("button")
-    addButton.innerText = "Click"
-    theDiv.appendChild(addButton)
-    addButton.addEventListener("click", function(){
+//     let theDiv = document.getElementsByTagName("div")[2]
+//     let addButton = document.createElement("button")
+//     addButton.innerText = "Click"
+//     theDiv.appendChild(addButton)
+//     addButton.addEventListener("click", function(){
         
-        let img = document.getElementsByTagName("img")
-        for (let i = 0; i < img.length; i++){
-            img[i].classList.toggle("img-toggle")
-        }
+//         let img = document.getElementsByTagName("img")
+//         for (let i = 0; i < img.length; i++){
+//             img[i].classList.toggle("img-toggle")
+//         }
         
-    })
-//--------------------------------------------------------------------------------------------------------
+//     })
+// //--------------------------------------------------------------------------------------------------------
 
-let theDivs = document.getElementsByTagName("div")[2]
-    let addButtons = document.createElement("button")
-    addButtons.innerText = "Toggle"
-    theDivs.appendChild(addButtons)
+// let theDivs = document.getElementsByTagName("div")[2]
+//     let addButtons = document.createElement("button")
+//     addButtons.innerText = "Toggle"
+//     theDivs.appendChild(addButtons)
 
-addButtons.addEventListener("click", function(){
-    let table = document.getElementById("container")
-    table.classList.toggle("table-toggle")
+// addButtons.addEventListener("click", function(){
+//     let table = document.getElementById("container")
+//     table.classList.toggle("table-toggle")
+// })
+// //-------------------------------------------------------------------------------------------------------------
+// const sum = function(){
+//     let tdds = document.getElementsByTagName("td")
+//     let add = null;
+//     for (let i = 0; i < tdds.length; i++){
+//         add += +tdds[i].innerText
+//     }
+//     return add;
+// }
+// console.log(sum())
+// //-------------------------------------------------------------------------------------------------------------
+
+let h11 = document.querySelector("h1")
+
+
+h11.addEventListener("click", function(){
+    let str = h11.innerText
+    console.log(str)
+
+    str = str.substring(0, str.length - 1);
+    h11.innerText = str
+  
 })
-const sum = function(){
-    let tdds = document.getElementsByTagName("td")
-    let add = null;
-    for (let i = 0; i < tdds.length; i++){
-        add += +tdds[i].innerText
-    }
-    return add;
-}
-console.log(sum())
-
-
