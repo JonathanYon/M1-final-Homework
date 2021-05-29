@@ -260,17 +260,24 @@ for (let i = 0; i < tdd.length; i++){
 // })
 //---------------------------------------------------------------------------------------------------------------
 
-    let theDiv = document.getElementsByTagName("div")[2]
-    let addButto = document.createElement("button")
-    addButto.innerText = "Delete"
-    theDiv.appendChild(addButto)
-    addButto.addEventListener("click", function(){
-        let td = document.getElementsByTagName("td")
-        let  randomItem = td[Math.floor(Math.random() * td.length)]
-        console.log(randomItem)
-        randomItem.remove()
+    // let theDiv = document.getElementsByTagName("div")[2]
+    // let addButto = document.createElement("button")
+    // addButto.innerText = "Delete"
+    // theDiv.appendChild(addButto)
+    // addButto.addEventListener("click", function(){
+    //     let td = document.getElementsByTagName("td")
+    //     let  randomItem = td[Math.floor(Math.random() * td.length)]
+    //     console.log(randomItem)
+    //     randomItem.remove()
         
+    // })
+//---------------------------------------------------------------------------------------------------------------
+let tdtd = document.getElementsByTagName("td")
+for (let i = 0; i < tdtd.length; i++){
+    tdtd[i].addEventListener("mouseover", function(){
+        tdtd[i].style.borderColor = "red"
     })
+}
     
     
 
