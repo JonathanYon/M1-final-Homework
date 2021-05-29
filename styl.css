@@ -1,7 +1,7 @@
 body {
-    margin: 0; 
-    padding:0;
-    
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 
@@ -16,4 +16,7 @@ table, tr, td {
       display: flex;
       align-content: center;
       text-align:center;
+  }
+  .resize {
+    display: block;
   }

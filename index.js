@@ -108,78 +108,78 @@
 //         39) Write a function to add new items to a UL
 //         40) Write a function to empty a list
 
-let contain = document.getElementById("container")
-//-----------------------------------------------------------------------------------------
-let tdd = document.getElementsByTagName("td")
-// console.log(tdd)
-//------------------------------------------------------------------------------------
-for (row of tdd){
-    // console.log(row.innerText)
-}
-//-------------------------------------------------------------------------------------------
-let h11 = document.querySelector("h1")
-// console.log(h11)
-const newHeader = function(){
-    let newHe = h11.innerText;
-    newHe = "The Header"
-    return newHe
-}
-// console.log(newHeader())
-//--------------------------------------------------------------------------------------------
+// let contain = document.getElementById("container")
+// //-----------------------------------------------------------------------------------------
+// let tdd = document.getElementsByTagName("td")
+// // console.log(tdd)
+// //------------------------------------------------------------------------------------
+// for (row of tdd){
+//     // console.log(row.innerText)
+// }
+// //-------------------------------------------------------------------------------------------
+// let h11 = document.querySelector("h1")
+// // console.log(h11)
+// const newHeader = function(){
+//     let newHe = h11.innerText;
+//     newHe = "The Header"
+//     return newHe
+// }
+// // console.log(newHeader())
+// //--------------------------------------------------------------------------------------------
 
-const addRow = function(){
-let table1 = document.getElementById("container")
-let roww = document.createElement("tr")
-    for (let i = 0; i < 4; i++){
-        let column = document.createElement("td")
-        column.innerText = `column ${i}`
-            roww.appendChild(column)
-    }
-        table1.appendChild(roww)
+// const addRow = function(){
+// let table1 = document.getElementById("container")
+// let roww = document.createElement("tr")
+//     for (let i = 0; i < 4; i++){
+//         let column = document.createElement("td")
+//         column.innerText = `column ${i}`
+//             roww.appendChild(column)
+//     }
+//         table1.appendChild(roww)
 
-}
-addRow()
+// }
+// addRow()
 
-//----------------------------------------------------------------------------------------------------
-const addClass = function(){
-    let rowClass = document.getElementsByTagName("tr")
-    for (let i = 0; i < rowClass.length; i++){
-        rowClass[i].classList.add("test")
+// //----------------------------------------------------------------------------------------------------
+// const addClass = function(){
+//     let rowClass = document.getElementsByTagName("tr")
+//     for (let i = 0; i < rowClass.length; i++){
+//         rowClass[i].classList.add("test")
         
-    }
+//     }
     
-}
-addClass()
-//---------------------------------------------------------------------------------------------------
-const redColor = function(){
-    let theLink = document.getElementsByTagName("a")
-    for (let i = 0; i < theLink.length; i++){
-        theLink[i].style.backgroundColor = "red"
-    }
-}
-redColor()
-//-------------------------------------------------------------------------------------------------------
+// }
+// addClass()
+// //---------------------------------------------------------------------------------------------------
+// const redColor = function(){
+//     let theLink = document.getElementsByTagName("a")
+//     for (let i = 0; i < theLink.length; i++){
+//         theLink[i].style.backgroundColor = "red"
+//     }
+// }
+// redColor()
+// //-------------------------------------------------------------------------------------------------------
 
-window.onload = function(){
-    console.log("page loaded")
-}
-//-----------------------------------------------------------------------------------------------------
-const newItem = function(){
-    let newList = document.getElementsByTagName("ul")[0]
-    let newItem = document.createElement("li")
-    newItem.innerText = "New Item"
-    newList.appendChild(newItem)
-}
-newItem()
-//-------------------------------------------------------------------------------------------------------------
-const emptyLi = function(){
-    let newList = document.querySelectorAll("ul>li")
-    for (let i = 0; i < newList.length; i++){
-        newList[i].remove()
-    }
-}
+// window.onload = function(){
+//     console.log("page loaded")
+// }
+// //-----------------------------------------------------------------------------------------------------
+// const newItem = function(){
+//     let newList = document.getElementsByTagName("ul")[0]
+//     let newItem = document.createElement("li")
+//     newItem.innerText = "New Item"
+//     newList.appendChild(newItem)
+// }
+// newItem()
+// //-------------------------------------------------------------------------------------------------------------
+// const emptyLi = function(){
+//     let newList = document.querySelectorAll("ul>li")
+//     for (let i = 0; i < newList.length; i++){
+//         newList[i].remove()
+//     }
+// }
 
-emptyLi()
+// emptyLi()
 
 
 //         EXTRA 
@@ -194,3 +194,31 @@ emptyLi()
 //         48) Add a pink border to a cell when tde mouse is over it
 //         49) Write a function to add a table witd 4 rows and 3 columns programmatically
 //         50) Write a function to remove tde table from tde page
+//----------------------------------------------------------------------------------------------------
+// const hoverOnA = function(){
+//     let aHref = document.getElementsByTagName('a')
+    
+//     for (let i = 0; i < aHref.length; i++){
+//        aHref[i].href  
+//     }
+
+// }
+// console.log(hoverOnA())
+//------------------------------------------------------------------------------------------------------
+let theDiv = document.getElementsByTagName("div")[2]
+let addButton = document.createElement("button")
+addButton.innerText = "Click"
+theDiv.appendChild(addButton)
+// console.log(addButton)
+const hideImg = function(){
+    let image = document.getElementsByTagName("img")
+    for (let i = 0; i < image.length; i++){
+        image[i].classList.add("img-class")
+    }
+}
+hideImg()
+// const addBut = function(){
+    
+// }
+// addBut()
+
