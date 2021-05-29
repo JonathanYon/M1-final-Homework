@@ -265,5 +265,12 @@ for (let i = 0; i < tdd.length; i++){
     addButto.innerText = "Delete"
     theDiv.appendChild(addButto)
     addButto.addEventListener("click", function(){
-
+        let td = document.getElementsByTagName("td")
+        let  randomItem = td[Math.floor(Math.random() * td.length)]
+        console.log(randomItem)
+        randomItem.remove()
+        
     })
+    
+    
+
