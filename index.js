@@ -113,9 +113,10 @@
 let tdd = document.getElementsByTagName("td")
 // // console.log(tdd)
 // //------------------------------------------------------------------------------------
-// for (let i = 0; i < tdd.length; i++){
-//     tdd[i].innerText = "New text"
-// }
+for (let i = 0; i < tdd.length; i++){
+    // for (let j = 0; j < tdd[i].length; j++)
+    tdd[i].innerText = Math.floor(Math.random()*100)
+}
 // //-------------------------------------------------------------------------------------------
 // let h11 = document.querySelector("h1")
 // // console.log(h11)
@@ -234,5 +235,14 @@ addButtons.addEventListener("click", function(){
     let table = document.getElementById("container")
     table.classList.toggle("table-toggle")
 })
+const sum = function(){
+    let tdds = document.getElementsByTagName("td")
+    let add = null;
+    for (let i = 0; i < tdds.length; i++){
+        add += +tdds[i].innerText
+    }
+    return add;
+}
+console.log(sum())
 
 
