@@ -247,14 +247,16 @@ for (let i = 0; i < tdd.length; i++){
 // console.log(sum())
 // //-------------------------------------------------------------------------------------------------------------
 
-let h11 = document.querySelector("h1")
+// let h11 = document.querySelector("h1")
 
 
-h11.addEventListener("click", function(){
-    let str = h11.innerText
-    console.log(str)
+// h11.addEventListener("click", function(){
+//     let str = h11.innerText
+//     console.log(str)
 
-    str = str.substring(0, str.length - 1);
-    h11.innerText = str
+//     str = str.substring(0, str.length - 1);
+//     h11.innerText = str
   
-})
+// })
+//---------------------------------------------------------------------------------------------------------------
+
