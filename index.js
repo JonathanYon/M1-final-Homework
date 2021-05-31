@@ -258,26 +258,61 @@ for (let i = 0; i < tdd.length; i++){
 //     h11.innerText = str
   
 // })
-//---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
 
-    // let theDiv = document.getElementsByTagName("div")[2]
-    // let addButto = document.createElement("button")
-    // addButto.innerText = "Delete"
-    // theDiv.appendChild(addButto)
-    // addButto.addEventListener("click", function(){
-    //     let td = document.getElementsByTagName("td")
-    //     let  randomItem = td[Math.floor(Math.random() * td.length)]
-    //     console.log(randomItem)
-    //     randomItem.remove()
+//     let theDiv = document.getElementsByTagName("div")[2]
+//     let addButto = document.createElement("button")
+//     addButto.innerText = "Delete"
+//     theDiv.appendChild(addButto)
+//     addButto.addEventListener("click", function(){
+//         let td = document.getElementsByTagName("td")
+//         let  randomItem = td[Math.floor(Math.random() * td.length)]
+//         console.log(randomItem)
+//         randomItem.remove()
         
-    // })
-//---------------------------------------------------------------------------------------------------------------
-let tdtd = document.getElementsByTagName("td")
-for (let i = 0; i < tdtd.length; i++){
-    tdtd[i].addEventListener("mouseover", function(){
-        tdtd[i].style.borderColor = "red"
-    })
-}
-    
-    
-
+//     })
+// ---------------------------------------------------------------------------------------------------------------
+// let tdtd = document.getElementsByTagName("td")
+// for (let i = 0; i < tdtd.length; i++){
+//     tdtd[i].addEventListener("mouseover", function(){
+//         tdtd[i].style.borderColor = "red"
+//     })
+// }
+ //----------------------------------------------------------------------------------------------------------------
+ const  new_table = function() {
+    // get the reference for the body
+    // var body = document.getElementsByTagName("body")[0];
+    let body = document.getElementById("tab")
+  
+    // creates a <table> element and a <tbody> element
+    // var tbl = document.createElement("table");
+    var tblBody = document.createElement("tbody");
+  
+    // creating all cells
+    for (let i = 0; i < 3; i++) {
+      // creates a table row
+      var row = document.createElement("tr");
+  
+      for (var j = 0; j < 4; j++) {
+        // Create a <td> element and a text node, make the text
+        // node the contents of the <td>, and put the <td> at
+        // the end of the table row
+        let cell = document.createElement("td");
+        let cellText = document.createTextNode("cell in row "+i+", column "+j);
+        
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+      }
+  
+      // add the row to the end of the table body
+      tblBody.appendChild(row);
+    }
+  
+    // put the <tbody> in the <table>
+    tbl.appendChild(tblBody);
+    // appends <table> into <body>
+    body.appendChild(tbl);
+    // sets the border attribute of tbl to 2;
+    tbl.setAttribute("border", "2");
+  }
+  //
